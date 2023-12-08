@@ -13,8 +13,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          ftp-server: ftpupload.net
-          ftp-username: IF0_35581398
-          ftp-password: ${{ secrets.IF0_35581398 }}
+          server: ftpupload.net
+          username: IF0_35581398
+          password: ${{ secrets.IF0_35581398 }}
+          server-dir: public_html/cd1/
